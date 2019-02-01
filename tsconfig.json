@@ -9,6 +9,7 @@
     "noImplicitThis": false,
     "strictNullChecks": true,
     "removeComments": true,
-    "baseUrl": "."
+    "baseUrl": ".",
+    "outDir": "./dist"
   }
 }
