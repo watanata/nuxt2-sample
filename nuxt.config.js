@@ -40,7 +40,8 @@ module.exports = {
   */
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    '~/modules/typescript.js'
   ],
   /*
   ** Axios module configuration

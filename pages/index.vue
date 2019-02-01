@@ -28,14 +28,19 @@
   </section>
 </template>
 
-<script>
-import Logo from '~/components/Logo.vue'
+<script lang="ts">
+import Logo from '~/components/Logo.vue';
+let isDone: boolean;
+
+isDone = false;
+
+console.log(isDone);
 
 export default {
   components: {
     Logo
   }
-}
+};
 </script>
 
 <style>
