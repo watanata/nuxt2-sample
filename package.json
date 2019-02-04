@@ -14,10 +14,11 @@
     "test": "jest"
   },
   "dependencies": {
+    "@nuxtjs/axios": "^5.3.6",
+    "aws-sdk": "^2.395.0",
     "cross-env": "^5.2.0",
-    "nuxt": "^2.3.4",
     "express": "^4.16.4",
-    "@nuxtjs/axios": "^5.3.6"
+    "nuxt": "^2.3.4"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^0.0.1",
