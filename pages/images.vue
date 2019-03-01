@@ -4,9 +4,11 @@
       <li
         v-for="(url, index) in images"
         :key="index">
-        <img
-          :src="url"
-          width="400">
+        <lazy-component>
+          <img
+            :src="url"
+            width="400">
+        </lazy-component>
       </li>
     </ul>
   </div>
