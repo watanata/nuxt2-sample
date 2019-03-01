@@ -5,7 +5,7 @@
   "author": "",
   "private": true,
   "scripts": {
-    "dev": "cross-env NODE_ENV=development nodemon server/index.js --watch server",
+    "dev": "cross-env NODE_ENV=development nodemon",
     "build": "nuxt build",
     "start": "cross-env NODE_ENV=production node server/index.js",
     "generate": "nuxt generate",
@@ -40,6 +40,7 @@
     "jest": "^23.6.0",
     "nodemon": "^1.18.9",
     "ts-loader": "^5.3.3",
+    "ts-node": "^8.0.2",
     "typescript": "^3.2.4",
     "typescript-eslint-parser": "^22.0.0",
     "vue-eslint-parser": "^5.0.0",

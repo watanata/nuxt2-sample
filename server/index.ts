@@ -11,6 +11,8 @@ if (process.env.PORT) {
   port = 3000;
 }
 
+import images from './images';
+
 app.set('port', port);
 
 // Import and Set Nuxt.js options
@@ -32,7 +34,8 @@ async function start() {
       extended: true
     })
   );
-  // app.use(bodyParser.json());
+  app.use(bodyParser.json());
+  app.use(images);
 
   // Give nuxt middleware to express
   app.use(nuxt.render);
