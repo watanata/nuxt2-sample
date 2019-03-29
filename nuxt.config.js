@@ -59,6 +59,10 @@ module.exports = {
     ** You can extend webpack config here
     */
     extend(config, ctx) {
+      const vueLoader = config.module.rules.find((rule) => rule.loader === 'vue-loader')
+      vueLoader.options.transformAssetUrls = {
+        'lazy-image': 'src'
+      };
       // Run ESLint on save
       if (ctx.isDev && ctx.isClient) {
         config.module.rules.push({
